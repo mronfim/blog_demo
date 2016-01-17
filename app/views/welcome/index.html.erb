@@ -1,0 +1,27 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="col-1 about homepage_content">
+		<h2>Stuff About Me</h2>
+		<hr>
+		<p>I'm a software developer living in Cape Cod, Massachusetts.</p>
+		<p>By day I study Computer Science at Cape Cod Community College, by night I develope software for <a href="#">Brainy Turtle Software</a>.</p>
+		<p>You can follow me on <a href="#">Twitter</a>, like my pictures on <a href="#">Instagram</a>, and see some of my work on <a href="#">Github</a>.</p>
+	</div>
+	<div class="col-2 homepage_content">
+		<h2>Stuff I've Written</h2>
+		<hr>
+		<% @posts.each do |post| %>
+		<h3><%= link_to post.title, post %></h3>
+		<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+		<% end %>
+	</div>
+	<div class="col-3 homepage_content">
+		<h2>Stuff I've Built</h2>
+		<hr>
+		<h3><a href="#">Brainy Turtle</a></h3>
+		<p class="date">Saturday, January 16th</p>
+		<h3><a href="#">Digital Menu</a></h3>
+		<p class="date">Saturday, January 16th</p>
+		<h3><a href="#">Sports Bleacher</a></h3>
+		<p class="date">Saturday, January 16th</p>
+	</div>
+</div>
