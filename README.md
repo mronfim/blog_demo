@@ -1,3 +1,5 @@
+[Checkout the Demo](https://aqueous-ocean-6289.herokuapp.com/)
+
 # Planning our application
 	1. Answer Questions
 		- What are we building?
